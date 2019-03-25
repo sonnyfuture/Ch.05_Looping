@@ -1,6 +1,6 @@
 '''
 HONOR CODE: I solemnly promise that while taking this test I will only use PyCharm or the Internet,
-but I will definitely not ask another person except the instructor. Signed: ______________________
+but I will definitely not ask another person except the instructor. Signed: Eddie H. Agic
  1. Make the following program work.
    '''
 print("This program takes three numbers and returns the sum.")
@@ -61,8 +61,20 @@ print(number)
       
 '''
 
-total = 0
+positive=0
+negative=0
+zero=0
+total=0
 for i in range(7):
-    x = int(input("Give me a number: "))
-    total = total + x
-print(total)
+    x=int(input("Give me a number: "))
+    total=total+x
+    if x>=1:
+        positive+=1
+    elif<=1:
+        negative+=1
+    else:
+        zero+=1
+print("Total:",total)
+print("Positives:",positive)
+print("Negatives:",negative)
+print("Zeros:",zero)
